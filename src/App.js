@@ -10,7 +10,7 @@ function App() {
   const [liste, setListe] = useState(INITIAL_STATE);
   const [yeniBaslik, setYeniBaslik] = useState("");
 
-  const addNew = title => {
+  const addNew = title => {title==="" ? alert("tesekkurler hocam :)"):
     setListe([...liste, { id: Date.now(), baslik: title, tamamlandi: false }]);
     setYeniBaslik("");
   };
